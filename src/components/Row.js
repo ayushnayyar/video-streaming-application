@@ -10,14 +10,12 @@ function Row({ title, fetchURL, isLargeRow }) {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(fetchURL);
-            console.log(request);
+            console.log('Request: ' + request);
             setMovies(request.data.results);
             return request;
         }
         fetchData();
     }, [fetchURL]);
-
-    console.log(movies);
 
     return (
         <div className='row'>
