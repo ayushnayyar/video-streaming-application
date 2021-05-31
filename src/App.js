@@ -12,17 +12,14 @@ function App() {
             ></Row>
             <Row title='Trending' fetchURL={requests.fetchTrending}></Row>
             <Row title='Top Rated' fetchURL={requests.fetchTopRated}></Row>
-            <Row
-                title='Action Movies'
-                fetchURL={requests.fetchActionMovies}
-            ></Row>
+            <Row title='Drama' fetchURL={requests.fetchDramaMovies}></Row>
             <Row
                 title='Comedy Movies'
                 fetchURL={requests.fetchComedyMovies}
             ></Row>
             <Row
-                title='Horror Movies'
-                fetchURL={requests.fetchHorrorMovies}
+                title='Family Movies'
+                fetchURL={requests.fetchFamilyMovies}
             ></Row>
             <Row
                 title='Romance Movies'
