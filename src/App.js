@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 import Row from './components/Row';
+import Banner from './components/Banner';
 import requests from './api/requests';
 
 function App() {
     return (
         <div className='app'>
+            <Banner />
             <Row
                 title='Originals'
                 fetchURL={requests.fetchOriginals}
