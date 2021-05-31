@@ -5,10 +5,11 @@ import requests from './api/requests';
 
 function App() {
     return (
-        <div className='App'>
+        <div className='app'>
             <Row
                 title='Originals'
-                fetchURL={requests.fetchNetflixOriginals}
+                fetchURL={requests.fetchOriginals}
+                isLargeRow
             ></Row>
             <Row title='Trending' fetchURL={requests.fetchTrending}></Row>
             <Row title='Top Rated' fetchURL={requests.fetchTopRated}></Row>
